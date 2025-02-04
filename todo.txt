@@ -1,0 +1,55 @@
+
+"""TO DO 
+
+Error Log #1: dùng F12 để mở cửa sổ DevTools, nếu dùng tổ hợp Ctrl + Shift + I có thể không mở được
+Error Log #2: khi mở trang web full link thì in được hết content
+Error Log #3: khi in bằng Windown thì có thể in tất cả các trang, còn dùng Mac thì chỉ có thể in 1 trang 1
+Error Log #4: mỗi trình duyệt web khác nhau sẽ có một syntax print khác nhau, cần phải cấu hình tùy theo trình duyệt web 
+
+Note #1: chả cần xóa cái embed_autogen đi, xóa document_container và document_scroller là gần như XONG 
+
+
+from selenium import webdriver
+import time
+import os
+
+# Đường dẫn thư mục lưu file PDF
+download_dir = os.path.abspath("pdf_files")  # Ví dụ: lưu vào thư mục 'pdf_files'
+
+# Tạo thư mục nếu chưa có
+if not os.path.exists(download_dir):
+    os.makedirs(download_dir)
+
+# Cấu hình Firefox để in ra PDF và lưu tự động
+firefox_options = webdriver.FirefoxOptions()
+firefox_profile = webdriver.FirefoxProfile()
+
+firefox_profile.set_preference("print.always_print_silent", True)  # In mà không hiển thị hộp thoại
+firefox_profile.set_preference("print.show_page_setup_menu", False)  # Ẩn menu thiết lập trang
+firefox_profile.set_preference("print.print_to_file", True)  # In ra file
+firefox_profile.set_preference("print.print_to_filename", f"{download_dir}/output.pdf")  # Đặt tên file PDF
+firefox_profile.set_preference("print.print_paper_size", 1)  # Chọn kích thước giấy mặc định
+firefox_profile.set_preference("print.printer_Mozilla_Save_to_PDF.print_to_file", True)  # Chọn máy in PDF
+firefox_profile.set_preference("print.printer_Mozilla_Save_to_PDF.print_to_filename", f"{download_dir}/output.pdf")
+
+firefox_options.profile = firefox_profile
+
+# Khởi chạy Firefox với cấu hình trên
+driver = webdriver.Firefox(options=firefox_options)
+
+# Mở trang web cần in
+driver.get("https://www.example.com")
+
+# Chờ trang tải xong
+time.sleep(2)
+
+# Gọi hộp thoại in bằng JavaScript
+driver.execute_script("window.print();")
+
+# Chờ một chút để quá trình in hoàn tất
+time.sleep(5)
+
+# Đóng trình duyệt
+driver.quit()
+
+print(f"File PDF đã được lưu trong thư mục: {download_dir}")
