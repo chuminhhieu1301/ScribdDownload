@@ -1,0 +1,7 @@
+# syntax: dependency && version number
+selenium==4.27.1
+webdriver_manager==4.0.2
+
+
+
+
