@@ -21,6 +21,8 @@
 **Note: The "Print as PDF" option must be selected, and "Print both header and footer" must be unchecked in the print settings.** 
 
 ## Code
+- Python 3.8.20
+- Environments: view requirements.txt (pip install -r requirements.txt)
 - Currently, I have written the code to run on the Windows platform, supporting both Google Chrome and Firefox browsers. Please refer to GoogleChrome.py and Firefox.py for details.
 - View the "ErrorLog" if you encounter any issues.
 **Note: Each browser and OS may have different conditions, so please verify them beforehand.**
