@@ -22,7 +22,7 @@
 
 ## Code
 - Currently, I have written the code to run on the Windows platform, supporting both Google Chrome and Firefox browsers. Please refer to GoogleChrome.py and Firefox.py for details.
-
+- View the "ErrorLog" if you encounter any issues.
 **Note: Each browser and OS may have different conditions, so please verify them beforehand.**
 
 ## Special Thanks
