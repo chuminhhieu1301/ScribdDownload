@@ -1,0 +1,15 @@
+Error Log 
+
+Tiếng Việt
+Error Log #1: Dùng F12 để mở cửa sổ DevTools, nếu dùng tổ hợp Ctrl + Shift + I có thể không mở được.
+Error Log #2: Khi mở trang web full link thì in được hết content.
+Error Log #3: Khi in bằng Windown thì có thể in tất cả các trang, còn dùng Mac thì chỉ có thể in 1 trang 1.
+Error Log #4: Mỗi trình duyệt web khác nhau sẽ có một syntax print khác nhau, cần phải cấu hình tùy theo trình duyệt web.
+Error Log #5: Thêm "options.add_experimental_option("detach", True)" vào code khi chạy với Google Chrome để giữ cửa sổ duyệt web không đóng. Khác với Firefox, quá trình hiển thị nội dung print sẽ mất thời gian hơn rất nhiều.
+
+English:
+Error Log #1: Use F12 to open the DevTools window. If using the shortcut Ctrl + Shift + I, it may not open. 
+Error Log #2: When opening the full link of the website, all content can be printed. 
+Error Log #3: When printing on Windows, it is possible to print all pages, while on Mac, only one page can be printed at a time. 
+Error Log #4: Different web browsers have different print syntax, so configuration must be done according to the browser. 
+Error Log #5: Add "options.add_experimental_option("detach", True)" to the code when running with Google Chrome to keep the browser window open. Unlike Firefox, the process of displaying the print content will take much longer.
