@@ -26,19 +26,3 @@
 - Currently, I have written the code to run on the Windows platform, supporting both Google Chrome and Firefox browsers. Please refer to GoogleChrome.py and Firefox.py for details.
 - View the "ErrorLog" if you encounter any issues.
 **Note: Each browser and OS may have different conditions, so please verify them beforehand.**
-
-## Special Thanks
-- Special thanks to [Tran Long Vu](https://github.com/Tran-Long-Vu) for optimizing and debugging. I couldn't have completed this project without your help.
-
-## Buy me a coffee
-- Write your email when you donate so I can send you information if I have a new project.
-- If you have any questions, feel free to contact me at: chuminhhieu1301@gmail.com.
-
-**Paypal**
-https://www.paypal.me/minhhieuchu
-
-**Momo**
-
-![QR_Momo_CMH_01](https://github.com/user-attachments/assets/b1c5a803-a6e5-4a76-b397-8c1038bfc32b)
-
-
